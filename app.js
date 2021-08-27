@@ -31,7 +31,7 @@ app.use(limiter);
 app.use(hpp());
 
 //Db address of local database
-const DB = process.env.DATABASE_LOCAL;
+const DB = process.env.DATABASE_CLOUD;
 
 //mongoose connection
 mongoose.connect(DB,{
