@@ -31,8 +31,8 @@ app.use(limiter);
 app.use(hpp());
 
 //Db address of local database
-const DB = process.env.DATABASE_CLOUD;
-
+const DB = process.env.DATABASE_STRING;
+console.log(DB);
 //mongoose connection
 mongoose.connect(DB,{
   useNewUrlParser: true,
